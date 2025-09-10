@@ -39,7 +39,7 @@ jobs:
       - name: Copy JAR to Public Server
         uses: appleboy/scp-action@v0.1.7
         with:
-# ${} : 환경변수 (바뀔 수 있는 값!) -> 미설정 시 공백 취급
+# ${} : 환경변수 (바뀔 수 있는 값!) -> 미 설정 시 공백 취급
 # secrets : actions에 접근하기 위한 키값
           host: ${{ secrets.PUBLIC_HOST }} 
           username: root
